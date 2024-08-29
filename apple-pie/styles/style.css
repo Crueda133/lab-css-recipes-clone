@@ -32,23 +32,40 @@ body {
   text-align: center;
 }
 
-    .hero-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 800px;
-      background-image: url(/apple-pie/images/apple-pie.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    height: 800px;
+  background-image: url(/apple-pie/images/apple-pie.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     }
     
-    .hero-title {
-      color: white;
-      font-size: 3rem;;
-    }
+.hero-title {
+color: white;
+font-size: 3rem;;
+}
 
-.container {
+p {
+  font-size: 22px;
+  padding-left: 100px;
+  margin-block:60px;
+}
+
+h2 {
+  font-size: 28px;
+  padding-left: 100px;
+  margin-block:20px;
+}
+
+h3 {
+  font-size: 28px;
+  padding-left: 100px;
+  margin-block:20px;
+}
+
+#container {
   max-width: 960px;
 }
 
@@ -62,4 +79,18 @@ body {
   display: flex;
   justify-content: center;
   margin-block:20px;
+}
+
+ol.custom-list li::before {
+  content: counter(custom-counter) ") ";
+  padding-left: 100px;
+}
+
+ol.custom-list li {
+  counter-increment: custom-counter;
+}
+
+ul.dash-list li::before {
+  content: "- ";
+  padding-left: 100px;
 }
