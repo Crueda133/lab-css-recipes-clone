@@ -22,3 +22,44 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+
+.hero {
+  background-image: url("/apple-pie/images/apple-pie.jpg");
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+    .hero-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 800px;
+      background-image: url(/apple-pie/images/apple-pie.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .hero-title {
+      color: white;
+      font-size: 3rem;;
+    }
+
+.container {
+  max-width: 960px;
+}
+
+.second-image{
+  display: flex;
+  justify-content: center;
+  margin-block:20px;
+}
+
+.third-image{
+  display: flex;
+  justify-content: center;
+  margin-block:20px;
+}
